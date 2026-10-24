@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Boteco Belém</title>
+  <meta name="description" content="Cardápio do Boteco Belém — Peixes, pratos especiais, pratos executivos, pratos do dia, guarnições, caldos, lanches, porções, sobremesas e bebidas." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;800&family=Bebas+Neue&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- HEADER / NAV -->
+  <header id="site-header" class="nav">
+    <div class="container nav__inner">
+      <a href="#" class="brand">
+        <span class="brand__mark">BB</span>
+        Boteco Belém
+      </a>
+      <nav class="nav__links" aria-label="Principal">
+        <a href="#menu">Cardápio</a>
+        <a href="#local">Onde estamos</a>
+      </nav>
+      <a href="#contato" class="nav__cta">Fale conosco</a>
+      <button class="nav__burger" aria-label="Abrir menu">&#9776;</button>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section id="hero" class="hero">
+    <div class="hero__inner">
+      <span class="eyebrow">Boteco Belém &middot; Sabor, história e resenha boa</span>
+      <h1>Sabor autêntico, <em>pratos irresistíveis</em> e ambiente acolhedor.</h1>
+      <p>No Boteco do Belém, cada detalhe é pensado para transformar sua noite em experiência. Do primeiro gole ao último brinde.</p>
+      <div class="hero__ctas">
+        <a href="#menu" class="btn btn--primary">Ver cardápio</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- MENU -->
+  <main>
+    <section id="menu" class="section">
+      <div class="container">
+        <div class="section__head">
+          <span class="eyebrow">Nosso cardápio</span>
+          <h2>Da cozinha pra sua mesa</h2>
+          <p>Gastronomia paulistana. Venha conferir.</p>
+        </div>
+
+        <div class="menu-tabs" role="tablist">
+          <button class="menu-tab is-active" data-tab="peixes" role="tab">Peixes</button>
+          <button class="menu-tab" data-tab="pratos especiais" role="tab">Pratos especiais</button>
+          <button class="menu-tab" data-tab="pratos executivos" role="tab">Pratos executivos</button>
+          <button class="menu-tab" data-tab="pratos do dia" role="tab">Pratos do dia</button>
+          <button class="menu-tab" data-tab="guarnicoes extras" role="tab">Guarnições extras</button>
+          <button class="menu-tab" data-tab="caldos" role="tab">Caldos</button>
+          <button class="menu-tab" data-tab="lanches" role="tab">Lanches</button>
+          <button class="menu-tab" data-tab="porcoes" role="tab">Porções</button>
+          <button class="menu-tab" data-tab="sobremesas" role="tab">Sobremesas</button>
+          <button class="menu-tab" data-tab="bebidas sem alcool" role="tab">Bebidas s/ álcool</button>
+          <button class="menu-tab" data-tab="bebidas com alcool" role="tab">Bebidas c/ álcool</button>
+        </div>
+
+        <div class="menu-group is-active" data-group="peixes">
+          <div class="menu-grid">
+            <div class="menu-item">
+              <span class="menu-item__name">Salmão</span>
+              <span class="menu-item__price">R$ 60,00</span>
+              <p class="menu-item__desc"></p>
+            </div>
+            <div class="menu-item">
+              <span class="menu-item__name">Dele de Pescado</span>
+              <span class="menu-item__price">R$ 39,00</span>
+              <p class="menu-item__desc"></p>
+            </div>
+            <div class="menu-item">
+              <span class="menu-item__name">Filé de Tilápia Grelhado</span>
+              <div class="menu-item__option">
+                <span class="menu-item__price">R$39,00</span>
+                <p class="menu-item__desc">Com arroz e fritas</p>
+              </div>
+              <div class="menu-item__option">
+                <span class="menu-item__price">R$43,00</span>
+                <p class="menu-item__desc">Com baião e mandioca</p>
+              </div>
+            </div>
+            <div class="menu-item">
+              <span class="menu-item__name">Filé de Tilápia à Milanesa</span>
+              <div class="menu-item__option">
+                <span class="menu-item__price">R$39,00</span>
+                <p class="menu-item__desc">Com arroz e fritas</p>
+              </div>
+              <div class="menu-item__option">
+                <span class="menu-item__price">R$43,00</span>
+                <p class="menu-item__desc">Com baião e mandioca</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-group" data-group="pratos especiais">
+          <div class="menu-grid">
+            <div class="menu-item">
+              <span class="menu-item__name">Picanha p/ 1 pessoa</span>
+              <div class="menu-item__option">
+                <span class="menu-item__price">R$ 80,00</span>
+                <p class="menu-item__desc">Acompanha arroz, feijão e fritas</p>
+              </div>
+              <div class="menu-item__option">
+                <span class="menu-item__price">R$ 84,00</span>
+                <p class="menu-item__desc">Acompanha baião e mandioca</p>
+              </div>
+            </div>
+            <div class="menu-item">
+              <span class="menu-item__name">Picanha p/ 2 pessoas</span>
+              <div class="menu-item__option">
+                <span class="menu-item__price">R$ 160,00</span>
+                <p class="menu-item__desc">Acompanha arroz, feijão e fritas</p>
+              </div>
+              <div class="menu-item__option">
+                <span class="menu-item__price">R$ 164,00</span>
+                <p class="menu-item__desc">Acompanha baião e mandioca</p>
+              </div>
+            </div>
+            <div class="menu-item">
+              <span class="menu-item__name">Picanha Argentina</span>
+              <div class="menu-item__option">
+                <span class="menu-item__price">R$ 70,00</span>
+                <p class="menu-item__desc">Para 1 pessoa - Acompanha baião e mandioca</p>
+              </div>
+              <div class="menu-item__option">
+                <span class="menu-item__price">R$ 140,00</span>
+                <p class="menu-item__desc">Para 2 pessoas - Acompanha baião e mandioca</p>
+              </div>
+            </div>
+            <div class="menu-item">
+              <span class="menu-item__name">Contra Filé p/ 1 pessoa</span>
+              <div class="menu-item__option">
+                <span class="menu-item__price">R$ 46,00</span>
+                <p class="menu-item__desc">Acompanha arroz, feijão e fritas</p>
+              </div>
+              <div class="menu-item__option">
+                <span class="menu-item__price">R$ 50,00</span>
+                <p class="menu-item__desc">Acompanha baião e mandioca</p>
+              </div>
+            </div>
+            <div class="menu-item">
+              <span class="menu-item__name">Contra Filé p/ 2 pessoas</span>
+              <div class="menu-item__option">
+                <span class="menu-item__price">R$ 90,00</span>
+                <p class="menu-item__desc">Acompanha arroz, feijão e fritas</p>
+              </div>
+              <div class="menu-item__option">
+                <span class="menu-item__price">R$ 100,00</span>
+                <p class="menu-item__desc">Acompanha baião e mandioca</p>
+              </div>
+            </div>
+            <div class="menu-item">
+              <span class="menu-item__name">Carne seca</span>
+              <div class="menu-item__option">
+                <span class="menu-item__price">R$ 55,00</span>
+                <p class="menu-item__desc">Para 1 pessoa - Acompanha Baião e mandioca.</p>
+              </div>
+              <div class="menu-item__option">
+                <span class="menu-item__price">R$ 110,00</span>
+                <p class="menu-item__desc">Para 2 pessoas - Acompanha Baião e mandioca.</p>
+              </div>
+            </div> 
+            <div class="menu-item">
+              <span class="menu-item__name">Bife à Parmegiana</span>
+              <div class="menu-item__option">
+                <span class="menu-item__price">R$ 49,00</span>
+                <p class="menu-item__desc">Para 1 pessoa - Acompanha arroz e fritas</p>
+              </div>
+              <div class="menu-item__option">
+                <span class="menu-item__price">R$ 90,00</span>
+                <p class="menu-item__desc">Para 2 pessoas - Acompanha arroz e fritas</p>
+              </div>
+            </div>
+            <div class="menu-item">
+              <span class="menu-item__name">Filé de Frango à Parmegiana</span>
+              <div class="menu-item__option">
+                <span class="menu-item__price">R$ 39,00</span>
+                <p class="menu-item__desc">Para 1 pessoa - Acompanha arroz e fritas</p>
+              </div>
+              <div class="menu-item__option">
+                <span class="menu-item__price">R$ 80,00</span>
+                <p class="menu-item__desc">Para 2 pessoas - Acompanha arroz e fritas</p>
+              </div>
+            </div> 
+            <div class="menu-item">
+              <span class="menu-item__name">Filé Mignon à Parmegiana</span>
+              <div class="menu-item__option">
+                <span class="menu-item__price">R$ 60,00</span>
+                <p class="menu-item__desc">Para 1 pessoa - Acompanha arroz e fritas</p>
+              </div>
+              <div class="menu-item__option">
+                <span class="menu-item__price">R$ 120,00</span>
+                <p class="menu-item__desc">Para 2 pessoas - Acompanha arroz e fritas</p>
+              </div>
+            </div> 
+            <div class="menu-item">
+              <span class="menu-item__name">Filé de Frango na Manteiga</span>
+              <div class="menu-item__option">
+                <span class="menu-item__price">R$ 70,00</span>
+                <p class="menu-item__desc">Para 1 pessoa - Acompanha baião e mandioca</p>
+              </div>
+              <div class="menu-item__option">
+                <span class="menu-item__price">R$ 130,00</span>
+                <p class="menu-item__desc">Para 2 pessoas - Acompanha baião e mandioca</p>
+              </div>
+            </div>         
+          </div>
+        </div>
+
+        <div class="menu-group" data-group="pratos executivos">
+          <div class="menu-grid">
+            <div class="menu-item">
+              <span class="menu-item__name">Bisteca</span>
+              <div class="menu-item__option">
+                <span class="menu-item__price">R$ 25,00</span>
+                <p class="menu-item__desc">Acompanha arroz, feijão e fritas</p>
+              </div>
+              <div class="menu-item__option">
+                <span class="menu-item__price">R$ 29,00</span>
+                <p class="menu-item__desc">Acompanha baião e mandioca</p>
+              </div>
+            </div>
+            <div class="menu-item">
+              <span class="menu-item__name">Calabresa</span>
+              <div class="menu-item__option">
+                <span class="menu-item__price">R$ 25,00</span>
+                <p class="menu-item__desc">Acompanha arroz, feijão e fritas</p>
+              </div>
+              <div class="menu-item__option">
+                <span class="menu-item__price">R$ 29,00</span>
+                <p class="menu-item__desc">Acompanha baião e mandioca</p>
+              </div>
+            </div>
+            <div class="menu-item">
+              <span class="menu-item__name">Filé de Frango</span>
+              <div class="menu-item__option">
+                <span class="menu-item__price">R$ 25,00</span>
+                <p class="menu-item__desc">Acompanha arroz, feijão e fritas</p>
+              </div>
+              <div class="menu-item__option">
+                <span class="menu-item__price">R$ 29,00</span>
+                <p class="menu-item__desc">Acompanha baião e mandioca</p>
+              </div>
+            </div>
+            <div class="menu-item">
+              <span class="menu-item__name">Omelete</span>
+              <div class="menu-item__option">
+                <span class="menu-item__price">R$ 29,00</span>
+                <p class="menu-item__desc">Acompanha arroz, feijão e fritas</p>
+              </div>
+              <div class="menu-item__option">
+                <span class="menu-item__price">R$ 33,00</span>
+                <p class="menu-item__desc">Acompanha baião e mandioca</p>
+              </div>
+            </div>
+            <div class="menu-item">
+              <span class="menu-item__name">Mini Contra Filé</span>
+              <div class="menu-item__option">
+                <span class="menu-item__price">R$ 30,00</span>
+                <p class="menu-item__desc">Acompanha arroz, feijão e fritas</p>
+              </div>
+              <div class="menu-item__option">
+                <span class="menu-item__price">R$ 34,00</span>
+                <p class="menu-item__desc">Acompanha baião e mandioca</p>
+              </div>
+            </div>
+            <div class="menu-item">
+              <span class="menu-item__name">Bife à Milanesa</span>
+              <div class="menu-item__option">
+                <span class="menu-item__price">R$ 35,00</span>
+                <p class="menu-item__desc">Acompanha arroz, feijão e fritas</p>
+              </div>
+              <div class="menu-item__option">
+                <span class="menu-item__price">R$ 39,00</span>
+                <p class="menu-item__desc">Acompanha baião e mandioca</p>
+              </div>
+            </div>
+            <div class="menu-item">
+              <span class="menu-item__name">Filé de Frango à Milanesa</span>
+              <div class="menu-item__option">
+                <span class="menu-item__price">R$ 33,00</span>
+                <p class="menu-item__desc">Acompanha arroz, feijão e fritas</p>
+              </div>
+              <div class="menu-item__option">
+                <span class="menu-item__price">R$ 37,00</span>
+                <p class="menu-item__desc">Acompanha baião e mandioca</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="menu-group" data-group="pratos do dia">
+        </div>
+
+        <div class="menu-group" data-group="guarnicoes extras">
+        </div>
+
+        <div class="menu-group" data-group="caldos">
+        </div>
+
+        <div class="menu-group" data-group="lanches">
+        </div>
+
+        <div class="menu-group" data-group="porcoes">
+        </div>
+
+        <div class="menu-group" data-group="sobremesas">
+        </div>
+
+        <div class="menu-group" data-group="bebidas sem alcool">
+        </div>
+
+        <div class="menu-group" data-group="bebidas com alcool">
+        </div>   
+
+      </div>
+    </section>
+
+    <!-- LOCATION -->
+    <section id="local" class="section section--dark">
+      <div class="container">
+        <div class="section__head">
+          <span class="eyebrow">Onde estamos</span>
+          <h2>Passe pra tomar um litrão</h2>
+          <p>Temos música ao vivo nos finais de semana. Esperamos você aqui.</p>
+        </div>
+
+        <div class="local-grid">
+          <div class="local-card">
+            <h3>Endereço &amp; horários</h3>
+            <div class="local-info">
+              <div>
+                <span class="ico">&#9873;</span>
+                <div>
+                  <strong>Rua Major Otaviano, 321</strong>
+                  <small>Belém &middot; São Paulo &middot; CEP 03054-050</small>
+                </div>
+              </div>
+              <div>
+                <span class="ico">&#9200;</span>
+                <div>
+                  <strong>Segunda a Sábado</strong>
+                  <small>06h &mdash; 23h</small>
+                </div>
+              </div>
+              <div>
+                <span class="ico">&#9200;</span>
+                <div>
+                  <strong>Domingo e Feriados</strong>
+                  <small>Fechado</small>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+
+          <div class="map-embed" aria-label="Mapa ilustrativo">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.6749898455328!2d-46.60409560000001!3d-23.5441893!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5925979216c5%3A0x47f68aa1106a897b!2sR.%20Maj.%20Otaviano%2C%20321%20-%20Bel%C3%A9m%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2003054-050!5e0!3m2!1spt-BR!2sbr!4v1792781454016!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>  
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT / RESERVAS -->
+    <section id="contato" class="section">
+      <div class="container">
+        <div class="section__head">
+          <span class="eyebrow">Contato &amp; Reservas</span>
+          <h2>Reserve sua mesa</h2>
+          <p>Grupos a partir de 6 pessoas, aniversários e eventos privativos: fale com a gente.</p>
+        </div>
+
+        <div class="contact-grid">
+         <div> 
+          <aside class="contact-side">
+            <div>
+              <h3>Fale conosco</h3>
+              <p>Prefere resolver rapidinho? Chama a gente no WhatsApp.</p>
+              <div class="contact-list">
+                <a href="tel:+550000000000"><span class="ico">&#9742;</span> (11) 9.9011-7609</a>
+                <a href="https://wa.me/5500000000000"><span class="ico">&#9993;</span> WhatsApp (11) 9.9011-7609</a>
+              </div>
+            </div>
+            <div>
+              <p style="margin-bottom:12px;font-size:13px;letter-spacing:.05em;text-transform:uppercase;color:rgba(244,231,201,.5)">Siga a gente</p>
+              <div class="socials">
+                <a href="https://www.instagram.com/botecobelem_/" aria-label="Instagram">IG</a>
+              </div>
+            </div>
+          </div>
+         </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer id="site-footer" class="footer">
+    <div class="container">
+      <p><strong>Portal da Cachoeirinha</strong> &middot; Comida brasileira com pratos típicos nordestinos</p>
+      <p style="margin-top:6px">&copy; <span id="year"></span> Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="script.js" defer></script>
+</body>
+</html>
